@@ -1,8 +1,5 @@
 package com.robbyp.scab
 
-import org.scalatra._
-import scalate.ScalateSupport
-
 class MyScalatraServlet extends ScabStack {
 
   get("/") {

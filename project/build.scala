@@ -10,7 +10,7 @@ object ScabBuild extends Build {
   val Name = "scab"
   val Version = "0.1.0-SNAPSHOT"
   val ScalaVersion = "2.11.6"
-  val ScalatraVersion = "2.3.0"
+  val ScalatraVersion = "2.4.0.RC1"
 
   lazy val project = Project (
     "scab",
@@ -24,7 +24,7 @@ object ScabBuild extends Build {
       libraryDependencies ++= Seq(
         "org.scalatra" %% "scalatra" % ScalatraVersion,
         "org.scalatra" %% "scalatra-scalate" % ScalatraVersion,
-        "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
+        "org.scalatra" %% "scalatra-scalatest" % ScalatraVersion % "test",
         "ch.qos.logback" % "logback-classic" % "1.1.2" % "runtime",
         "org.eclipse.jetty" % "jetty-webapp" % "9.1.5.v20140505" % "container",
         "org.eclipse.jetty" % "jetty-plus" % "9.1.5.v20140505" % "container",
