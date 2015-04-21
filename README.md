@@ -1,5 +1,7 @@
 # scab #
 
+[![Build Status](https://travis-ci.org/robpurcell/scab.svg)](https://travis-ci.org/robpurcell/scab)
+
 ## Build & Run ##
 
 ```sh
