@@ -11,7 +11,7 @@ import org.joda.time.{DateTime, Days, Interval}
 import org.scalatest.prop.TableDrivenPropertyChecks._
 import org.scalatest.{FunSuite, Matchers}
 
-class AccountTest extends FunSuite with Matchers {
+class AccountUnitTest extends FunSuite with Matchers {
 
   val today = new DateTime()
 
