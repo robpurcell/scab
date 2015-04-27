@@ -185,8 +185,8 @@ class AccountUnitTest extends FunSuite with Matchers {
     forAll(amounts) {
       (amount1, amount2, balance, numberOfEntries) =>
         val account = Account(uniqueId = 1, accountInfo = defaultGBPAccountInfo)
-        def entry1 = new Entry(BigMoney.parse("GBP " + amount1), today)
-        def entry2 = new Entry(BigMoney.parse("GBP " + amount2), today)
+        val entry1 = new Entry(BigMoney.parse("GBP " + amount1), today)
+        val entry2 = new Entry(BigMoney.parse("GBP " + amount2), today)
         account.addEntry(entry1)
         account.addEntry(entry2)
 
@@ -210,8 +210,8 @@ class AccountUnitTest extends FunSuite with Matchers {
     forAll(amounts) {
       (amount1, amount2, balance, numberOfEntries) =>
         val account = Account(uniqueId = 1, accountInfo = defaultGBPAccountInfo)
-        def entry1 = new Entry(BigMoney.parse("GBP " + amount1), today)
-        def entry2 = new Entry(BigMoney.parse("GBP " + amount2), today)
+        val entry1 = new Entry(BigMoney.parse("GBP " + amount1), today)
+        val entry2 = new Entry(BigMoney.parse("GBP " + amount2), today)
         account.addEntry(entry1)
         account.addEntry(entry2)
 
