@@ -8,7 +8,7 @@
   </check>
   <check level="warning" class="org.scalastyle.file.HeaderMatchesChecker" enabled="true">
     <parameters>
-      <parameter name="header"><![CDATA[// Copyright ${YEAR} Purcell Informatics Limited
+      <parameter name="header"><![CDATA[// Copyright 2015 Purcell Informatics Limited
 //
 // See the LICENCE file distributed with this work for additional
 // information regarding copyright ownership.
