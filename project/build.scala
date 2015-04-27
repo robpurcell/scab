@@ -4,12 +4,14 @@ import org.scalatra.sbt._
 import sbt.Keys._
 import sbt._
 
+//noinspection ScalaFileName
 object ScabBuild extends Build {
   val Organization = "com.robbyp"
   val Name = "scab"
   val Version = "0.1.0-SNAPSHOT"
   val ScalaVersion = "2.11.6"
   val ScalatraVersion = "2.4.0.RC1"
+  lazy val testScalastyle = taskKey[Unit]("testScalastyle")
 
   lazy val project = Project(
     "scab",
@@ -42,7 +44,9 @@ object ScabBuild extends Build {
             Some("templates")
           )
         )
-      }
+      },
+      testScalastyle := org.scalastyle.sbt.ScalastylePlugin.scalastyle.in(Test).toTask("").value,
+      (test in Test) <<= (test in Test) dependsOn testScalastyle
     )
   )
 }
